@@ -14,3 +14,6 @@ categories = ["api-bindings", "games"]
 lazy_static = "1"
 thiserror = "1"
 wooting-rgb-sys = { version = "0.3", path = "../wooting-rgb-sys" }
+
+[features]
+no-drop = []

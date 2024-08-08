@@ -873,6 +873,7 @@ impl RgbKeyboard {
     }
 }
 
+#[cfg(not(feature = "no-drop"))]
 impl Drop for RgbKeyboard {
     fn drop(&mut self) {
         // By restricting all rgb functions to get performed on a struct then we can ensure
